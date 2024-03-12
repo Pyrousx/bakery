@@ -1,26 +1,23 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import pepper from "./img/pepper.png";
+import doughnut from "./img/doughnut.jpg";
+
+import "./output.css";
 import { Button } from "./components/button";
+import NavBar from "./components/navbar";
+import CardDemo from "./components/productCard";
+import Test from "./components/test";
+import Hero from "./components/hero";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Button variant="ghost">Hi</Button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <Hero />
+      <div className="m-h-full -z-10 min-w-full bg-[url('./img/doughnut.jpg')] pt-10"></div>
+
+      {/* <p className="z-10">hello</p> */}
     </div>
   );
 }

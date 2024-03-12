@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App.css */
+/* @import lcoal("./fonts/charlotte.ttf"); */
+
+@font-face {
+  font-family: "charlotte";
+  src:
+    local("charlotte"),
+    url("./fonts/charlotte.woff") format("woff");
+}

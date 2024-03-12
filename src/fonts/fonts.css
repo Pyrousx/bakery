@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "charlotte";
+  src: url("./fonts/charlotte.ttf") format("truetype");
+  /* Add additional src declarations for different font weights/styles if needed */
+}
