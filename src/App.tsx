@@ -2,6 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import pepper from "./img/pepper.png";
 import doughnut from "./img/doughnut.jpg";
+import goeyDoughnut from "./img/goeyDoughnut.jpg";
+
 
 import "./output.css";
 import { Button } from "./components/button";
@@ -16,7 +18,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./components/carousel";
-import goeyDoughnut from "./img/goeyDoughnut.jpg";
+import { CarouselDApiDemo } from "./components/carouselTest";
+import ProductCarousel from "./components/productCarousel";
 
 function App() {
   return (
@@ -26,32 +29,8 @@ function App() {
       {/* <div className="m-h-full -z-10 min-w-full bg-[url('./img/doughnut.jpg')] pt-10"></div> */}
 
       <div>dada</div>
-
-      <Carousel
-        className=""
-        opts={{
-          loop: true,
-          slidesToScroll: 3,
-          dragFree: true,
-        }}
-      >
-        <CarouselContent className="justify-center">
-          <CarouselItem className="md:basis-1/4 lg:basis-1/4">
-            <img src={require("./img/wildDoughnut.jpg")} />
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-            <img src={require("./img/fancyDoughnut.jpg")}></img>
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-            <img src={require("./img/goeyDoughnut.jpg")} />
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/4">
-            <img src={require("./img/goeyDoughnut.jpg")} />
-          </CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+      <CarouselDApiDemo />
+      <ProductCarousel />
       {/* <p className="z-10">hello</p> */}
     </div>
   );
